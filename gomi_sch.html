@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ごみ収集日</title>
+ <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+ <style> body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f9f9f9; color: #333;
+               line-height: 1.6; padding: 20px; max-width: 600px; margin: auto; } h1, h2, h3 { color: #444; } 
+               a { color: #0078d4; text-decoration: none; font-weight: bold; } 
+               a:hover { text-decoration: underline; } 
+               hr { border: none; border-top: 1px solid #ccc; margin: 20px 0; } button { background-color: #0078d4; color: white; border: none; padding: 10px 20px; 
+               font-size: 1rem; border-radius: 5px; cursor: pointer; } button:focus { outline: 2px solid #005a9e; outline-offset: 2px; } </style> 
+</head>
+<body>
+ <h1>ごみ収集日</h1>
+ <ul>
+  <li>燃やすごみ&nbsp;    毎週火・木曜日</li>
+  <li>容器包装プラ&nbsp;  毎週金曜日</li>
+  <li>木くず・剪定枝&nbsp;毎週金曜日</li>
+  <li>紙類&nbsp;          第１・第３日曜日</li>  
+  <hr>
+  <li>資源・不燃ゴミ&nbsp;次回は６月１日(月)/７月２日(木)</li>
+ </ul>
+ <p>下のボタンから前の画面に戻ることができます。</p> 
+<hr> 
+<button id="closeBtn">✖ 閉じる</button>
+<script>
+  const liffId = "2009971027-65gkpEip";
+  liff.init({ liffId }).then(() => {
+    document.getElementById("closeBtn").onclick = () => {
+      liff.closeWindow();
+    };
+  });
+</script>
+<hr> 
+ <h3>追加情報</h3> 
+ <p>このページの内容は今後更新される予定です。ご要望や修正点があればお知らせください。</p>
+</body> 
+</html>
+
