@@ -17,8 +17,8 @@
 <hr> 
 <button id="closeBtn">◀️ 閉じる</button>
 <script>
-  liff.init({ liffId: "YOUR_LIFF_ID" }).then(() => {
-    document.getElementById("closeBtn").onclick = () => {
+  liff.init({ liffId: "YOUR_LIFF_ID" }).then(() {
+    document.getElementById("closeBtn").onclick = () {
       liff.closeWindow();
     };
   });
