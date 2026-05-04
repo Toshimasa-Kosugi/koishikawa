@@ -14,7 +14,19 @@
  <p>このページは現在準備中です。</p>
  <p>下のボタンから前の画面に戻ることができます。</p> 
 <hr> 
+
+
+
+
  <button onclick="window.close();">◀️ 閉じる</button>
+<button id="closeBtn">閉じる</button>
+<script>
+  liff.init({ liffId: "YOUR_LIFF_ID" }).then(() => {
+    document.getElementById("closeBtn").onclick = () => {
+      liff.closeWindow();
+    };
+  });
+</script>
 <hr> 
  <h3>追加情報</h3> 
  <p>このページの内容は今後更新される予定です。ご要望や修正点があればお知らせください。</p>
