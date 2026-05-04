@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>準備中ページ</title> 
+ <title>準備中ページ</title>
+ <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
  <style> body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f9f9f9; color: #333;
                line-height: 1.6; padding: 20px; max-width: 600px; margin: auto; } h1, h2, h3 { color: #444; } 
                a { color: #0078d4; text-decoration: none; font-weight: bold; } 
@@ -14,12 +15,7 @@
  <p>このページは現在準備中です。</p>
  <p>下のボタンから前の画面に戻ることができます。</p> 
 <hr> 
-
-
-
-
- <button onclick="window.close();">◀️ 閉じる</button>
-<button id="closeBtn">閉じる</button>
+<button id="closeBtn">◀️ 閉じる</button>
 <script>
   liff.init({ liffId: "YOUR_LIFF_ID" }).then(() => {
     document.getElementById("closeBtn").onclick = () => {
